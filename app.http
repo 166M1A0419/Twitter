@@ -1,46 +1,45 @@
-###
 POST http://localhost:3000/register/
 Content-Type: application/json
 
-{
-  "username": "kalyani@44",
-  "password": "kallu@998",
-  "name": "kalyani",
-  "gender": "female"
-}
+
 
 ###
 POST http://localhost:3000/login/
 Content-Type: application/json
 
 {
- "username": "kalyani@44",
- "password": "kallu@998"
+  "username":"JoeBiden",
+  "password":"biden@123"
 }
 
+
 ###
-GET http://localhost:3000/tweets/:tweetId/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbHlhbmlANDQiLCJpYXQiOjE2MjA4MDk4MTZ9.MIN7VMQ5ojt_h7CDHRP0kY2jvTkRB350T1VAYh6gvxI
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIyMTY3NzQzfQ.FygKFNTFGXfb1O35itXbZbaZ3-iVOLTY1VJHFxSe7TU
 
 ### 
-GET http://localhost:3000/user/following/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbHlhbmlANDQiLCJpYXQiOjE2MjA4MDk4MTZ9.MIN7VMQ5ojt_h7CDHRP0kY2jvTkRB350T1VAYh6gvxI
+GET http://localhost:3000/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIyMTY3NzQzfQ.FygKFNTFGXfb1O35itXbZbaZ3-iVOLTY1VJHFxSe7TU
+
 
 
 
 ###
 
 GET http://localhost:3000/user/tweets/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbHlhbmlANDQiLCJpYXQiOjE2MjA4MDk4MTZ9.MIN7VMQ5ojt_h7CDHRP0kY2jvTkRB350T1VAYh6gvxI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIyMTY3NzQzfQ.FygKFNTFGXfb1O35itXbZbaZ3-iVOLTY1VJHFxSe7TU
+
 
 ###
 
 POST http://localhost:3000/user/tweets/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbHlhbmlANDQiLCJpYXQiOjE2MjA4MDk4MTZ9.MIN7VMQ5ojt_h7CDHRP0kY2jvTkRB350T1VAYh6gvxI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIyMTY3NzQzfQ.FygKFNTFGXfb1O35itXbZbaZ3-iVOLTY1VJHFxSe7TU
+
 Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3000/tweets/:tweetId
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbHlhbmlANDQiLCJpYXQiOjE2MjA4MDk4MTZ9.MIN7VMQ5ojt_h7CDHRP0kY2jvTkRB350T1VAYh6gvxI
+DELETE http://localhost:3000/tweets/1/
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIyMTY3NzQzfQ.FygKFNTFGXfb1O35itXbZbaZ3-iVOLTY1VJHFxSe7TU
 Content-Type: application/json
